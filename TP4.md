@@ -141,7 +141,7 @@ Votre API est maintenant prête à être utilisée ! Testez les différents endp
 
 # Annexes 
 
-### DOnnées JSON d'un film
+### Données JSON d'un film
 
 ```
 {
