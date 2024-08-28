@@ -143,4 +143,20 @@ movie-api/
 
 ## Étape 7 : requêtes à faire : 
 
-1. Faire CRUD pour tous les entités
+| **Endpoint**                                          | **Méthode HTTP** | **URL**                            | **Commande Sequelize**            | **Description**                                                                 |
+|-------------------------------------------------------|-----------------|------------------------------------|-----------------------------------|---------------------------------------------------------------------------------|
+| **Créer un film**                                     | POST            | `/api/films`                      | `Film.create(data)`               | Crée un nouveau film dans la base de données.                                   |
+| **Récupérer tous les films**                          | GET             | `/api/films`                      | `Film.findAll()`                   | Récupère tous les films de la base de données.                                  |
+| **Récupérer un film par ID**                          | GET             | `/api/films/:id`                  | `Film.findByPk(id)`                | Récupère un film spécifique par son ID.                                         |
+| **Mettre à jour un film**                             | PUT             | `/api/films/:id`                  | `Film.update(data, { where: { id } })` | Met à jour les informations d'un film existant par son ID.                    |
+| **Supprimer un film**                                 | DELETE          | `/api/films/:id`                  | `Film.destroy({ where: { id } })`  | Supprime un film spécifique de la base de données.                              |
+| **Créer une critique (review)**                       | POST            | `/api/reviews`                    | `Review.create(data)`              | Crée une nouvelle critique pour un film.                                        |
+| **Récupérer toutes les critiques pour un film**       | GET             | `/api/films/:id/reviews`          | `Review.findAll({ where: { filmId: id } })` | Récupère toutes les critiques associées à un film spécifique.        |
+| **Récupérer toutes les critiques d'un utilisateur**   | GET             | `/api/users/:id/reviews`          | `Review.findAll({ where: { userId: id } })` | Récupère toutes les critiques faites par un utilisateur spécifique.   |
+| **Supprimer une critique**                            | DELETE          | `/api/reviews/:id`                | `Review.destroy({ where: { id } })` | Supprime une critique spécifique de la base de données.                       |
+| **Créer un utilisateur**                              | POST            | `/api/users`                      | `User.create(data)`                | Crée un nouvel utilisateur dans la base de données.                             |
+| **Récupérer tous les utilisateurs**                   | GET             | `/api/users`                      | `User.findAll()`                   | Récupère tous les utilisateurs de la base de données.                           |
+| **Récupérer un utilisateur par ID**                   | GET             | `/api/users/:id`                  | `User.findByPk(id)`                | Récupère un utilisateur spécifique par son ID.                                  |
+| **Mettre à jour un utilisateur**                      | PUT             | `/api/users/:id`                  | `User.update(data, { where: { id } })` | Met à jour les informations d'un utilisateur existant par son ID.            |
+| **Supprimer un utilisateur**                          | DELETE          | `/api/users/:id`                  | `User.destroy({ where: { id } })`  | Supprime un utilisateur spécifique de la base de données.                       |
+
