@@ -11,12 +11,11 @@ Choisir un sujets parmi les propositions ci dessous et faie un guide d'utilisati
 
 1. Mise en place d'une base de données de backup avec des procédures SQL :
    Comment automatiser les backups d'une base de données relationnelle, gestion de la rétention des sauvegardes, et récupération à partir de ces backups en utilisant des procédures stockées.
-2. Utilisation de ClickHouse pour le traitement de données massives en temps réel :
-   Installation et configuration de ClickHouse, création de tables optimisées pour les gros volumes de données, et exécution de requêtes analytiques en temps réel.
+2. Mise en place d'une base de données temporelle avec Postgres :
+   Installation et configuration de Postgres avec l'extension données temporelle, création de tables optimisées pour les gros volumes de données, et exécution de requêtes temporelle.
 3. Utilisation de Redis pour le stockage de données temporaires :
    Explication de la structure clé-valeur, mise en place d’un cache simple et gestion des expirations de clés.
-4. Mise en place d'une base de données NoSQL avec Cassandra :
-   Introduction aux bases de données distribuées, modélisation des données dans Cassandra (basée sur les colonnes), et gestion de la cohérence éventuelle.
+4. Mise en place d'une base de données NoSQL avec CouchDB 
 5. Mise en place d'une base de données géospatiale avec PostGIS :
    Introduction à PostGIS, une extension de PostgreSQL pour gérer des données géospatiales, et implémentation de requêtes spatiales complexes.
 
